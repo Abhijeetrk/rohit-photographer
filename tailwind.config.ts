@@ -10,11 +10,17 @@ const config: Config = {
     extend: {
       fontFamily: {
         serif: ['Playfair Display', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
+        script: ['Great Vibes', 'cursive'],
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: {
+          dark: '#0A0A0A',
+          gold: '#C9A84C',
+          goldLight: '#DFC378',
+          charcoal: '#2C2C2C',
+          cream: '#F5F0E8',
+        },
       },
     },
   },

@@ -4,7 +4,7 @@ import { FcGoogle } from 'react-icons/fc'
 
 const platforms = [
   { name: 'Google Business', handle: 'Rohit Nagre Photography', desc: '5.0 ★ Star Verified Studio Profile & Client Reviews', href: 'https://maps.google.com/?q=Rohit+Nagre+Photography', Icon: FcGoogle, gradient: 'from-blue-600 via-red-500 to-yellow-500', followers: '5.0 ★ Verified' },
-  { name: 'Instagram', handle: '@rohitnagre.photography', desc: 'Daily royal wedding reels & behind-the-scenes stories', href: 'https://instagram.com/YOUR_INSTAGRAM', Icon: FiInstagram, gradient: 'from-purple-600 via-pink-500 to-orange-400', followers: '15K+ Community' },
+  { name: 'Instagram', handle: '@ro.clickz', desc: 'Daily royal wedding reels, behind-the-scenes & client features', href: 'https://instagram.com/ro.clickz', Icon: FiInstagram, gradient: 'from-purple-600 via-pink-500 to-orange-400', followers: 'Official Handle' },
   { name: 'WhatsApp Direct', handle: '+91 XXXXXXXXXX', desc: 'Instant date availability checks & fast session quotes', href: 'https://wa.me/91XXXXXXXXXX?text=Hi%20Rohit%20Nagre!%20I%20want%20to%20inquire%20about%20booking%20a%20photography%20shoot.', Icon: FaWhatsapp, gradient: 'from-green-600 to-emerald-500', followers: 'Instant Reply' },
   { name: 'YouTube Channel', handle: '@RohitNagreFilms', desc: 'Cinematic wedding films, 4K teasers & photography insights', href: 'https://youtube.com/@YOUR_YOUTUBE', Icon: FiYoutube, gradient: 'from-red-700 to-red-500', followers: '4K Wedding Reels' },
   { name: 'Facebook Page', handle: 'Rohit Nagre Photography', desc: 'Full event albums, family stories & high-res albums', href: 'https://facebook.com/YOUR_FACEBOOK', Icon: FaFacebook, gradient: 'from-blue-700 to-blue-500', followers: '10K+ Followers' },

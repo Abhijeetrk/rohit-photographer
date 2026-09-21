@@ -106,10 +106,18 @@ END:VCARD`
               </div>
             </div>
 
-            {/* Tagline */}
-            <p className="text-gray-300 text-sm italic mb-8 border-l-2 border-yellow-500 pl-3">
-              &ldquo;{cardData.tagline}&rdquo;
+            {/* Tagline using Great Vibes Script */}
+            <p className="font-script text-2xl sm:text-3xl text-[#C9A84C] mb-6 border-l-2 border-[#C9A84C] pl-3">
+              Your Story. My Lens.
             </p>
+
+            {/* Social Handle Tag */}
+            <div className="inline-flex items-center gap-2 bg-[#2C2C2C] border border-[#C9A84C]/30 px-3 py-1 rounded-full text-xs text-gray-200 mb-6">
+              <span className="text-[#C9A84C] font-semibold">Instagram:</span>
+              <a href="https://instagram.com/ro.clickz" target="_blank" rel="noopener noreferrer" className="hover:text-[#C9A84C] underline">
+                @ro.clickz
+              </a>
+            </div>
 
             {/* Contact Details */}
             <div className="space-y-4 mb-8">

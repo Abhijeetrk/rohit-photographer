@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { FiCamera, FiMenu, FiX } from 'react-icons/fi'
+import { FaInstagram } from 'react-icons/fa'
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -24,20 +25,22 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-black/90 backdrop-blur-md border-b border-zinc-800/80 py-3.5 shadow-xl' 
-        : 'bg-gradient-to-b from-black/80 to-transparent py-5'
+        ? 'bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#2C2C2C] py-3.5 shadow-xl' 
+        : 'bg-gradient-to-b from-[#0A0A0A]/90 to-transparent py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Clean Logo */}
-          <a href="#home" className="flex items-center gap-2.5 group">
-            <FiCamera className="text-yellow-500 text-2xl group-hover:rotate-6 transition-transform" />
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-              <span className="font-serif text-lg sm:text-xl font-bold text-white tracking-wide">
-                Rohit Nagre
+          {/* Logo Name Hierarchy */}
+          <a href="#home" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 rounded-full bg-[#2C2C2C] border border-[#C9A84C]/40 flex items-center justify-center text-[#C9A84C] group-hover:border-[#C9A84C] transition-all">
+              <FiCamera className="text-xl group-hover:scale-110 transition-transform" />
+            </div>
+            <div>
+              <span className="font-serif text-lg sm:text-xl font-bold text-white tracking-wide block leading-none">
+                ROHIT NAGRE
               </span>
-              <span className="text-yellow-500 text-xs tracking-widest uppercase font-light">
-                Photography
+              <span className="text-[#C9A84C] text-[10px] tracking-[0.3em] uppercase font-light block mt-1">
+                PHOTOGRAPHY
               </span>
             </div>
           </a>
@@ -48,19 +51,31 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-300 hover:text-yellow-400 transition-colors text-xs uppercase tracking-widest font-medium"
+                className="text-gray-300 hover:text-[#C9A84C] transition-colors text-xs uppercase tracking-widest font-medium"
               >
                 {link.label}
               </a>
             ))}
-            <a href="#contact" className="btn-primary text-xs py-2 px-5 tracking-wider uppercase">
-              Book a Shoot
+
+            {/* Instagram Handle Badge */}
+            <a
+              href="https://instagram.com/ro.clickz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#2C2C2C] border border-[#C9A84C]/30 text-xs text-gray-200 hover:text-[#C9A84C] hover:border-[#C9A84C] transition-all"
+            >
+              <FaInstagram className="text-sm text-[#C9A84C]" />
+              <span className="font-medium">@ro.clickz</span>
+            </a>
+
+            <a href="#contact" className="btn-primary text-xs py-2.5 px-6 tracking-wider uppercase">
+              Book a Session
             </a>
           </div>
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-white text-2xl p-1"
+            className="md:hidden text-white text-2xl p-1 focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -71,23 +86,31 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-zinc-950/98 border-b border-zinc-800 px-6 py-5 flex flex-col gap-3 mt-3">
+        <div className="md:hidden bg-[#0A0A0A]/98 border-b border-[#2C2C2C] px-6 py-5 flex flex-col gap-3 mt-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-gray-200 hover:text-yellow-400 py-2 border-b border-zinc-900 text-sm font-medium"
+              className="text-gray-200 hover:text-[#C9A84C] py-2 border-b border-[#2C2C2C]/50 text-sm font-medium"
             >
               {link.label}
             </a>
           ))}
           <a
+            href="https://instagram.com/ro.clickz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 py-2 text-sm text-[#C9A84C]"
+          >
+            <FaInstagram /> @ro.clickz
+          </a>
+          <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
             className="btn-primary text-center mt-3 text-xs uppercase tracking-wider py-3"
           >
-            Book a Shoot
+            Book a Session
           </a>
         </div>
       )}

@@ -4,7 +4,7 @@ import { FcGoogle } from 'react-icons/fc'
 
 const socials = [
   { Icon: FcGoogle, href: 'https://maps.google.com/?q=Rohit+Nagre+Photography', color: 'hover:scale-110', label: 'Google Business' },
-  { Icon: FiInstagram, href: 'https://instagram.com/YOUR_INSTAGRAM', color: 'hover:text-pink-400', label: 'Instagram' },
+  { Icon: FiInstagram, href: 'https://instagram.com/ro.clickz', color: 'hover:text-pink-400', label: 'Instagram @ro.clickz' },
   { Icon: FaWhatsapp, href: 'https://wa.me/91XXXXXXXXXX', color: 'hover:text-green-400', label: 'WhatsApp' },
   { Icon: FaFacebook, href: 'https://facebook.com/YOUR_FACEBOOK', color: 'hover:text-blue-400', label: 'Facebook' },
   { Icon: FiYoutube, href: 'https://youtube.com/@YOUR_YOUTUBE', color: 'hover:text-red-400', label: 'YouTube' },
