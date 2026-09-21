@@ -1,4 +1,4 @@
-import { FiInstagram, FiYoutube, FiTwitter, FiLinkedin } from 'react-icons/fi'
+import { FiInstagram, FiYoutube, FiLinkedin } from 'react-icons/fi'
 import { FaFacebook, FaWhatsapp, FaPinterest, FaBehance } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 

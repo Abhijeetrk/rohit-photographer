@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { FiPhone, FiMail, FiMapPin, FiShare2, FiDownload, FiCheck, FiCamera, FiGlobe } from 'react-icons/fi'
-import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 
 export default function VisitingCard() {
@@ -26,7 +26,7 @@ export default function VisitingCard() {
           text: `${cardData.brand} - ${cardData.tagline}`,
           url: cardData.website,
         })
-      } catch (err) {
+      } catch {
         copyToClipboard()
       }
     } else {
