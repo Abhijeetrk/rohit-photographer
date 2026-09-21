@@ -1,10 +1,48 @@
+import { FiHeart, FiUser, FiStar, FiCamera, FiBriefcase, FiSun } from 'react-icons/fi'
+
 const services = [
-  { emoji: '💍', title: 'Wedding Photography', desc: 'Complete wedding coverage — ceremony, reception, candid moments & more.', price: 'Starting ₹25,000', features: ['Full-day coverage', 'Edited digital photos', 'Online gallery', 'Printed album'] },
-  { emoji: '👤', title: 'Portrait Sessions', desc: 'Professional individual, couple & family portraits that capture your personality.', price: 'Starting ₹5,000', features: ['2-hour session', '50+ edited photos', 'Multiple outfits', 'Studio or outdoor'] },
-  { emoji: '🌟', title: 'Pre-Wedding Shoot', desc: 'Romantic, fun & creative pre-wedding shoots at beautiful locations.', price: 'Starting ₹15,000', features: ['Full day shoot', 'Multiple locations', '100+ photos', 'Cinematic video'] },
-  { emoji: '📷', title: 'Events & Functions', desc: 'Birthdays, corporate events, engagements & all types of special functions.', price: 'Starting ₹8,000', features: ['4-8 hour coverage', 'Same-day previews', 'HD video', 'Quick delivery'] },
-  { emoji: '💼', title: 'Commercial Photography', desc: 'Product photography & brand shoots for businesses.', price: 'Starting ₹10,000', features: ['White background', 'Lifestyle shots', 'Post-processing', 'Commercial rights'] },
-  { emoji: '✨', title: 'Fashion & Portfolio', desc: 'Stunning portfolio shoots for models, actors & influencers.', price: 'Starting ₹7,000', features: ['Studio lighting', 'Styling tips', 'Retouched edits', 'Model release'] },
+  {
+    icon: <FiHeart className="text-rose-400" />,
+    title: 'Luxury Wedding Photography',
+    desc: 'Complete ceremonial, candid & traditional coverage with master lighting and handcrafted signature albums.',
+    price: 'Starting ₹35,000',
+    features: ['Full Multi-Day Coverage', '4K Teaser & Cinematic Film', 'Unlimited Color-Graded Photos', 'Premium Handbound Royal Album'],
+  },
+  {
+    icon: <FiStar className="text-yellow-400" />,
+    title: 'Pre-Wedding & Couple Shoot',
+    desc: 'Romantic, high-fashion concept shoots at heritage forts, beaches, or private exotic locations.',
+    price: 'Starting ₹18,000',
+    features: ['Full Day On-Location', 'Drone Aerial Footage', 'Styling & Moodboard Direction', '100+ Edited High-Res Photos'],
+  },
+  {
+    icon: <FiUser className="text-blue-400" />,
+    title: 'Signature Portrait Sessions',
+    desc: 'Bespoke editorial portraits for personalities, artists, founders, and families with studio aesthetics.',
+    price: 'Starting ₹7,500',
+    features: ['2-3 Hours Guided Session', 'Studio or Outdoor Lighting', 'Multiple Wardrobe Looks', 'Magazine-Grade Skin Retouching'],
+  },
+  {
+    icon: <FiCamera className="text-purple-400" />,
+    title: 'Grand Events & Celebrations',
+    desc: 'Sangeet, cocktail parties, birthday galas, and cultural events covered with lively candid emotion.',
+    price: 'Starting ₹12,000',
+    features: ['High-Speed Candid Coverage', '48-Hour Preview Turnaround', 'Highlight Reel for Instagram', 'Digital Cloud Gallery Access'],
+  },
+  {
+    icon: <FiBriefcase className="text-emerald-400" />,
+    title: 'Commercial & Brand Shoots',
+    desc: 'High-converting visual assets for fashion labels, jewelry, architecture, restaurants, and hospitality.',
+    price: 'Starting ₹15,000',
+    features: ['Commercial Copyright Release', 'White-Glove Color Consistency', 'E-commerce & Lookbook Formats', 'High-Volume Batch Delivery'],
+  },
+  {
+    icon: <FiSun className="text-amber-400" />,
+    title: 'Fashion & Model Portfolios',
+    desc: 'Casting-ready model portfolios, actor headshots, and influencer campaigns curated to book top work.',
+    price: 'Starting ₹9,000',
+    features: ['International Posing Guidance', 'Studio Strobes & Modifiers', 'Comp-Card Layout Included', 'High-Fashion Mood Grade'],
+  },
 ]
 
 export default function Services() {
@@ -12,27 +50,39 @@ export default function Services() {
     <section id="services" className="py-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-yellow-500 tracking-[0.3em] uppercase text-sm font-medium mb-4">Services</p>
-          <h2 className="section-title">What I Offer</h2>
+          <p className="text-yellow-500 tracking-[0.3em] uppercase text-xs sm:text-sm font-semibold mb-3">
+            Signature Offerings
+          </p>
+          <h2 className="section-title">What Rohit Nagre Offers</h2>
           <span className="gold-line" />
-          <p className="section-subtitle">Tailored photography packages for every occasion</p>
+          <p className="section-subtitle">
+            Tailored, premium photography collections crafted with artistic precision and world-class client service.
+          </p>
         </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((s, i) => (
-            <div key={i} className="group bg-zinc-900 rounded-2xl p-8 border border-zinc-800 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1">
-              <div className="text-4xl mb-4">{s.emoji}</div>
-              <h3 className="font-serif text-xl font-bold text-white mb-3">{s.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed mb-5">{s.desc}</p>
-              <ul className="space-y-2 mb-6">
-                {s.features.map((f, j) => (
-                  <li key={j} className="flex items-center gap-2 text-sm text-gray-300">
-                    <span className="text-yellow-500">✓</span> {f}
-                  </li>
-                ))}
-              </ul>
-              <div className="flex items-center justify-between pt-4 border-t border-zinc-800">
-                <span className="text-yellow-500 font-semibold text-sm">{s.price}</span>
-                <a href="#contact" className="text-sm text-gray-400 hover:text-yellow-500 transition-colors">Book Now →</a>
+            <div key={i} className="group bg-zinc-900/90 rounded-3xl p-8 border border-zinc-800 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between shadow-xl">
+              <div>
+                <div className="text-3xl mb-4 p-3 bg-zinc-800/80 border border-zinc-700 w-fit rounded-2xl group-hover:scale-110 group-hover:border-yellow-500/40 transition-all duration-300">
+                  {s.icon}
+                </div>
+                <h3 className="font-serif text-xl font-bold text-white mb-3">{s.title}</h3>
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-6">{s.desc}</p>
+                <ul className="space-y-2.5 mb-8">
+                  {s.features.map((f, j) => (
+                    <li key={j} className="flex items-center gap-2.5 text-xs sm:text-sm text-gray-300">
+                      <span className="text-yellow-500 font-bold">✓</span> {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="flex items-center justify-between pt-5 border-t border-zinc-800">
+                <span className="text-yellow-400 font-bold text-sm tracking-wide">{s.price}</span>
+                <a href="#contact" className="text-xs uppercase tracking-wider font-semibold text-gray-400 hover:text-yellow-400 transition-colors">
+                  Inquire Now →
+                </a>
               </div>
             </div>
           ))}

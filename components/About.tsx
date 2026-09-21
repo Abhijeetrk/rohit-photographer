@@ -1,53 +1,91 @@
-import { FiAward, FiCamera, FiHeart, FiUsers } from 'react-icons/fi'
+import { FiAward, FiCamera, FiHeart, FiUsers, FiCheckCircle } from 'react-icons/fi'
+import { FcGoogle } from 'react-icons/fc'
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-zinc-950">
+    <section id="about" className="py-24 bg-zinc-950 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center">
+          {/* Photographer Brand Card / Image */}
           <div className="relative">
-            <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden">
+            <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-zinc-800 relative group">
               <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=800&q=80"
-                alt="Rohit Photographer" className="w-full h-full object-cover" />
+                alt="Rohit Nagre Photography" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              
+              <div className="absolute bottom-6 left-6 right-6">
+                <p className="text-yellow-500 text-xs font-semibold tracking-widest uppercase mb-1">Founder &amp; Principal Lead</p>
+                <h3 className="font-serif text-2xl font-bold text-white">Rohit Nagre</h3>
+                <p className="text-gray-300 text-xs mt-1">Specialized in Royal Weddings &amp; Candid Portraiture</p>
+              </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-yellow-500 text-black px-6 py-4 rounded-xl shadow-xl">
-              <p className="text-3xl font-bold font-serif">8+</p>
-              <p className="text-xs font-semibold uppercase tracking-wide">Years of<br />Experience</p>
+
+            {/* Experience Badge */}
+            <div className="absolute -bottom-6 -right-4 sm:-right-6 bg-gradient-to-br from-yellow-500 to-yellow-600 text-black px-6 py-4 rounded-xl shadow-2xl border-2 border-black">
+              <p className="text-3xl font-bold font-serif leading-none">8+</p>
+              <p className="text-xs font-bold uppercase tracking-wider mt-1">Years of<br />Excellence</p>
             </div>
           </div>
+
+          {/* Bio & Credentials */}
           <div>
-            <p className="text-yellow-500 tracking-[0.3em] uppercase text-sm font-medium mb-4">About Me</p>
-            <h2 className="section-title">Telling Stories Through the Lens</h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              Hello! I&apos;m <strong className="text-white">Rohit</strong>, a passionate professional photographer
-              based in India. With over 8 years of experience, I specialize in capturing precious and
-              candid moments of life — from grand weddings to intimate portraits.
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-4">
+              <FcGoogle className="text-base" />
+              <span className="text-yellow-500 text-xs font-semibold tracking-wider uppercase">Verified Professional Brand</span>
+            </div>
+
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Crafting Timeless Stories with Rohit Nagre
+            </h2>
+
+            <p className="text-gray-300 leading-relaxed mb-4 text-base">
+              Welcome to <strong className="text-yellow-400">Rohit Nagre Photography</strong>. We believe every frame holds a heartfelt story waiting to be immortalized. With over 8 years behind the lens, Rohit and his team specialize in turning raw, candid moments into cinematic treasures.
             </p>
-            <p className="text-gray-400 leading-relaxed mb-8">
-              My philosophy: every moment tells a story, and it&apos;s my job to tell it beautifully.
-              Using the latest equipment and a creative eye, I deliver stunning images you&apos;ll treasure forever.
+
+            <p className="text-gray-400 leading-relaxed mb-6 text-sm">
+              Whether documenting high-profile weddings, private celebrations, or commercial brand campaigns across India, we bring high-end lighting gear, cinematic color grading, and an effortless client experience from first consultation to final album delivery.
             </p>
-            <div className="flex flex-wrap gap-3 mb-8">
-              {['Wedding Photography', 'Portrait', 'Events', 'Commercial', 'Pre-Wedding', 'Fashion'].map((skill) => (
-                <span key={skill} className="px-4 py-1.5 bg-zinc-800 border border-zinc-700 rounded-full text-sm text-gray-300">
-                  {skill}
-                </span>
+
+            {/* Brand Pillars */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+              {[
+                'Google 5-Star Rated Studio',
+                'Comprehensive Wedding Packages',
+                'Ultra-HD Cinematic Equipment',
+                'Quick 48-Hr Teaser Turnaround',
+                'Premium Handcrafted Albums',
+                'Pan-India Travel Availability',
+              ].map((feature) => (
+                <div key={feature} className="flex items-center gap-2 text-sm text-gray-300">
+                  <FiCheckCircle className="text-yellow-500 shrink-0 text-base" />
+                  <span>{feature}</span>
+                </div>
               ))}
             </div>
-            <a href="#contact" className="btn-primary">Let&apos;s Work Together</a>
+
+            <div className="flex flex-wrap gap-4 items-center">
+              <a href="#contact" className="btn-primary text-sm uppercase tracking-wider">
+                Book a Session
+              </a>
+              <a href="#card" className="btn-outline text-sm uppercase tracking-wider">
+                Save Visiting Card
+              </a>
+            </div>
           </div>
         </div>
+
+        {/* Brand Stats Banner */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-24">
           {[
-            { icon: <FiCamera className="text-yellow-500 text-3xl mb-3 mx-auto" />, value: '5000+', label: 'Photos Taken' },
-            { icon: <FiHeart className="text-yellow-500 text-3xl mb-3 mx-auto" />, value: '300+', label: 'Weddings Covered' },
-            { icon: <FiUsers className="text-yellow-500 text-3xl mb-3 mx-auto" />, value: '800+', label: 'Happy Clients' },
-            { icon: <FiAward className="text-yellow-500 text-3xl mb-3 mx-auto" />, value: '8+', label: 'Years Experience' },
+            { icon: <FiCamera className="text-yellow-500 text-3xl mb-3 mx-auto" />, value: '5000+', label: 'Stunning Captures' },
+            { icon: <FiHeart className="text-yellow-500 text-3xl mb-3 mx-auto" />, value: '300+', label: 'Grand Weddings' },
+            { icon: <FiUsers className="text-yellow-500 text-3xl mb-3 mx-auto" />, value: '800+', label: 'Delighted Clients' },
+            { icon: <FiAward className="text-yellow-500 text-3xl mb-3 mx-auto" />, value: '5.0 ★', label: 'Google Rating' },
           ].map((stat, i) => (
-            <div key={i} className="text-center p-6 bg-zinc-900 rounded-2xl border border-zinc-800 hover:border-yellow-500/50 transition-colors">
+            <div key={i} className="text-center p-6 bg-zinc-900/90 rounded-2xl border border-zinc-800 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1">
               {stat.icon}
-              <p className="font-serif text-4xl font-bold text-white mb-1">{stat.value}</p>
-              <p className="text-gray-500 text-sm">{stat.label}</p>
+              <p className="font-serif text-3xl sm:text-4xl font-bold text-white mb-1">{stat.value}</p>
+              <p className="text-gray-400 text-xs sm:text-sm font-medium">{stat.label}</p>
             </div>
           ))}
         </div>

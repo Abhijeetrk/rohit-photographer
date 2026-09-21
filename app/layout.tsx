@@ -2,8 +2,14 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Rohit Photographer | Professional Photography',
-  description: 'Capturing life\'s most precious moments. Wedding, Portrait, Events & Commercial photography.',
+  title: 'Rohit Nagre Photography | Professional Wedding, Portrait & Commercial Photographer',
+  description: 'Official portfolio of Rohit Nagre Photography. Capturing life\'s most precious moments with world-class artistry — Weddings, Pre-Weddings, Portraits, Events & Commercial shoots across India.',
+  keywords: 'Rohit Nagre, Rohit Nagre Photography, Wedding Photographer Mumbai India, Professional Photographer, Portrait, Pre-Wedding Shoot, Commercial Photography',
+  openGraph: {
+    title: 'Rohit Nagre Photography | Professional Photographer',
+    description: 'Capturing emotions, telling stories, creating memories that last a lifetime.',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
