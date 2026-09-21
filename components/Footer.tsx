@@ -1,4 +1,4 @@
-import { FiCamera, FiInstagram, FiYoutube, FiTwitter, FiLinkedin, FiPhone, FiMail, FiMapPin } from 'react-icons/fi'
+import { FiInstagram, FiYoutube, FiTwitter, FiLinkedin, FiPhone, FiMail, FiMapPin } from 'react-icons/fi'
 import { FaFacebook, FaWhatsapp, FaPinterest } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 
@@ -28,14 +28,20 @@ export default function Footer() {
     <footer className="bg-zinc-950 border-t border-zinc-900 text-gray-400 text-xs sm:text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          {/* Brand Column */}
+          {/* Brand Column - Concept 1 Wordmark Style */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-3">
-              <FiCamera className="text-yellow-500 text-2xl" />
-              <span className="font-serif text-xl font-bold text-white tracking-wide">
-                Rohit Nagre <span className="text-yellow-500 font-light text-base uppercase tracking-widest">Photography</span>
+            <div className="mb-4">
+              <span className="font-serif text-2xl font-bold tracking-wider uppercase text-white block">
+                ROHIT NAGRE
+              </span>
+              <div className="w-24 h-[1.5px] bg-[#C9A84C] my-2"></div>
+              <span className="text-[11px] font-medium tracking-[0.4em] uppercase text-[#C9A84C] block">
+                P H O T O G R A P H Y
               </span>
             </div>
+            <p className="font-script text-2xl text-[#C9A84C] mb-3">
+              Your Story. My Lens.
+            </p>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-md mb-6">
               Official website of Rohit Nagre Photography. Documenting timeless weddings, emotive portraits, and landmark celebrations across India and destination venues worldwide.
             </p>

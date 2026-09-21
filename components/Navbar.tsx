@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { FiCamera, FiMenu, FiX } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi'
 import { FaInstagram } from 'react-icons/fa'
 
 const navLinks = [
@@ -8,6 +8,7 @@ const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#gallery', label: 'Portfolio' },
   { href: '#services', label: 'Services' },
+  { href: '#logos', label: 'Brand Logos' },
   { href: '#card', label: 'Visiting Card' },
   { href: '#contact', label: 'Contact' },
 ]
@@ -30,10 +31,19 @@ export default function Navbar() {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo Name Hierarchy */}
+          {/* Logo with Concept 3 Aperture Icon */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-[#2C2C2C] border border-[#C9A84C]/40 flex items-center justify-center text-[#C9A84C] group-hover:border-[#C9A84C] transition-all">
-              <FiCamera className="text-xl group-hover:scale-110 transition-transform" />
+            <div className="w-10 h-10 rounded-full bg-[#0A0A0A] border border-[#C9A84C]/50 flex items-center justify-center p-1.5 shadow-md shadow-[#C9A84C]/10 group-hover:border-[#C9A84C] group-hover:scale-105 transition-all duration-300">
+              <svg className="w-full h-full stroke-[#C9A84C] fill-none" viewBox="0 0 100 100" strokeWidth="3">
+                <circle cx="50" cy="50" r="44" strokeWidth="3" />
+                <circle cx="50" cy="50" r="16" strokeDasharray="3 3" opacity="0.6" />
+                <line x1="50" y1="6" x2="78" y2="40" />
+                <line x1="78" y1="40" x2="68" y2="82" />
+                <line x1="68" y1="82" x2="28" y2="80" />
+                <line x1="28" y1="80" x2="10" y2="46" />
+                <line x1="10" y1="46" x2="38" y2="12" />
+                <line x1="38" y1="12" x2="78" y2="40" />
+              </svg>
             </div>
             <div>
               <span className="font-serif text-lg sm:text-xl font-bold text-white tracking-wide block leading-none">

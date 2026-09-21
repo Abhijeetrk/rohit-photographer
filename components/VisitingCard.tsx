@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { FiPhone, FiMail, FiMapPin, FiShare2, FiDownload, FiCheck, FiCamera, FiGlobe } from 'react-icons/fi'
+import { FiPhone, FiMail, FiMapPin, FiShare2, FiDownload, FiCheck, FiGlobe } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 
@@ -9,12 +9,13 @@ export default function VisitingCard() {
 
   const cardData = {
     brand: 'Rohit Nagre Photography',
-    name: 'Rohit Nagre',
-    title: 'Founder & Lead Photographer',
-    phone: '+91 98765 43210',
-    email: 'contact@rohitnagrephotography.com',
-    location: 'Mumbai & Pan-India Coverage',
-    website: 'https://rohit-photographer.vercel.app',
+    name: 'ROHIT NAGRE',
+    title: 'P H O T O G R A P H E R',
+    phone: '+91 XXXXXXXXXX',
+    email: 'hello@rohitnagre.com',
+    location: 'Pune, Maharashtra',
+    website: 'https://rohitnagre.in',
+    instagram: '@ro.clickz',
     tagline: 'Your Story. My Lens.',
   }
 
@@ -85,18 +86,21 @@ END:VCARD`
             <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl -z-10 group-hover:bg-yellow-500/15 transition-all duration-700" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-yellow-600/10 rounded-full blur-2xl -z-10" />
 
-            {/* Header / Brand */}
-            <div className="flex items-start justify-between border-b border-zinc-800 pb-6 mb-6">
-              <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <FiCamera className="text-yellow-500 text-2xl" />
-                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-white tracking-wide">
-                    Rohit Nagre
-                  </h3>
+            {/* Header / Brand with Monogram Stamp */}
+            <div className="flex items-start justify-between border-b border-[#2C2C2C] pb-6 mb-6">
+              <div className="flex items-center gap-3.5">
+                {/* Concept 2 Monogram Emblem */}
+                <div className="w-12 h-12 rounded-full border-2 border-[#C9A84C] flex items-center justify-center p-1 bg-[#0A0A0A] shadow-md shadow-[#C9A84C]/15 shrink-0">
+                  <span className="font-serif text-lg font-bold tracking-widest text-[#C9A84C]">RN</span>
                 </div>
-                <p className="text-yellow-500/90 text-xs sm:text-sm font-medium tracking-[0.2em] uppercase">
-                  Photography Studio
-                </p>
+                <div>
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-white tracking-wide">
+                    ROHIT NAGRE
+                  </h3>
+                  <p className="text-[#C9A84C] text-[10px] tracking-[0.3em] uppercase font-light">
+                    PHOTOGRAPHY STUDIO
+                  </p>
+                </div>
               </div>
 
               {/* Google Badge */}

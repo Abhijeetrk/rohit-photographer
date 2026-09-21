@@ -3,6 +3,7 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Gallery from '@/components/Gallery'
 import Services from '@/components/Services'
+import LogoShowcase from '@/components/LogoShowcase'
 import VisitingCard from '@/components/VisitingCard'
 import SocialHub from '@/components/SocialHub'
 import Testimonials from '@/components/Testimonials'
@@ -11,12 +12,13 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main className="bg-[#0A0A0A]">
       <Navbar />
       <Hero />
       <About />
       <Gallery />
       <Services />
+      <LogoShowcase />
       <VisitingCard />
       <SocialHub />
       <Testimonials />
