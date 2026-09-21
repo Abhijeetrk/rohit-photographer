@@ -49,8 +49,12 @@ export default function Hero() {
           <span className="text-yellow-500 font-light tracking-wide text-3xl sm:text-5xl md:text-6xl">Photography</span>
         </h1>
 
-        <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-2xl mb-8 font-light leading-relaxed">
-          Capturing timeless emotions, candid warmth, and cinematic memories with complete signature brand excellence.
+        <p className="text-yellow-400 font-serif italic text-xl sm:text-2xl md:text-3xl mb-3 tracking-wide">
+          &ldquo;Your Story. My Lens.&rdquo;
+        </p>
+
+        <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-2xl mb-8 font-light leading-relaxed">
+          Capturing timeless emotions, candid warmth, and cinematic memories with signature excellence.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">

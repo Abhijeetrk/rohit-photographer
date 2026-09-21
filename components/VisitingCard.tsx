@@ -15,7 +15,7 @@ export default function VisitingCard() {
     email: 'contact@rohitnagrephotography.com',
     location: 'Mumbai & Pan-India Coverage',
     website: 'https://rohit-photographer.vercel.app',
-    tagline: 'Capturing Timeless Moments & Cinematic Stories',
+    tagline: 'Your Story. My Lens.',
   }
 
   const handleShare = async () => {

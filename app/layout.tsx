@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   description: 'Official portfolio of Rohit Nagre Photography. Capturing life\'s most precious moments with world-class artistry — Weddings, Pre-Weddings, Portraits, Events & Commercial shoots across India.',
   keywords: 'Rohit Nagre, Rohit Nagre Photography, Wedding Photographer Mumbai India, Professional Photographer, Portrait, Pre-Wedding Shoot, Commercial Photography',
   openGraph: {
-    title: 'Rohit Nagre Photography | Professional Photographer',
-    description: 'Capturing emotions, telling stories, creating memories that last a lifetime.',
+    title: 'Rohit Nagre Photography | Your Story. My Lens.',
+    description: 'Your Story. My Lens. — Official photography portfolio of Rohit Nagre.',
     type: 'website',
   },
 }
