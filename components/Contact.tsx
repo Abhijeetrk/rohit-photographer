@@ -108,25 +108,25 @@ export default function Contact() {
                 <div>
                   <label className="block text-gray-300 text-xs uppercase font-medium mb-1.5">Your Full Name *</label>
                   <input type="text" name="name" value={form.name} onChange={handleChange} required placeholder="e.g. Arjun Mehta"
-                    className="w-full bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:border-yellow-500 focus:outline-none text-sm" />
+                    className="w-full min-h-[44px] bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:border-[#C9A84C] focus:outline-none text-sm" />
                 </div>
                 <div>
                   <label className="block text-gray-300 text-xs uppercase font-medium mb-1.5">Phone Number *</label>
                   <input type="tel" name="phone" value={form.phone} onChange={handleChange} required placeholder="+91 98765 43210"
-                    className="w-full bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:border-yellow-500 focus:outline-none text-sm" />
+                    className="w-full min-h-[44px] bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:border-[#C9A84C] focus:outline-none text-sm" />
                 </div>
               </div>
 
               <div>
                 <label className="block text-gray-300 text-xs uppercase font-medium mb-1.5">Email Address *</label>
                 <input type="email" name="email" value={form.email} onChange={handleChange} required placeholder="you@example.com"
-                  className="w-full bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:border-yellow-500 focus:outline-none text-sm" />
+                  className="w-full min-h-[44px] bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:border-[#C9A84C] focus:outline-none text-sm" />
               </div>
 
               <div>
                 <label className="block text-gray-300 text-xs uppercase font-medium mb-1.5">Photography Category</label>
                 <select name="service" value={form.service} onChange={handleChange}
-                  className="w-full bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white focus:border-yellow-500 focus:outline-none text-sm">
+                  className="w-full min-h-[44px] bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white focus:border-[#C9A84C] focus:outline-none text-sm">
                   <option value="">Select Service / Occasion...</option>
                   <option>Luxury Wedding Photography</option>
                   <option>Pre-Wedding &amp; Couple Shoot</option>
@@ -141,7 +141,7 @@ export default function Contact() {
                 <label className="block text-gray-300 text-xs uppercase font-medium mb-1.5">Event Date, City &amp; Message</label>
                 <textarea name="message" value={form.message} onChange={handleChange} rows={4}
                   placeholder="Share expected dates, venue/city, and any specific creative vision..."
-                  className="w-full bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:border-yellow-500 focus:outline-none text-sm resize-none" />
+                  className="w-full bg-zinc-800/90 border border-zinc-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:border-[#C9A84C] focus:outline-none text-sm resize-none" />
               </div>
 
               <button type="submit" className="w-full btn-primary flex items-center justify-center gap-2 py-3.5 text-sm uppercase tracking-wider">

@@ -62,9 +62,9 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((s, i) => (
-            <div key={i} className="group bg-zinc-900/90 rounded-3xl p-8 border border-zinc-800 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between shadow-xl">
+            <div key={i} className="group bg-zinc-900/90 rounded-3xl p-8 border border-zinc-800 hover:border-[#C9A84C]/50 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between shadow-xl">
               <div>
-                <div className="text-3xl mb-4 p-3 bg-zinc-800/80 border border-zinc-700 w-fit rounded-2xl group-hover:scale-110 group-hover:border-yellow-500/40 transition-all duration-300">
+                <div className="text-3xl mb-4 p-3 bg-zinc-800/80 border border-zinc-700 w-fit rounded-xl group-hover:scale-110 group-hover:border-[#C9A84C]/40 transition-all duration-300">
                   {s.icon}
                 </div>
                 <h3 className="font-serif text-xl font-bold text-white mb-3">{s.title}</h3>
@@ -72,15 +72,15 @@ export default function Services() {
                 <ul className="space-y-2.5 mb-8">
                   {s.features.map((f, j) => (
                     <li key={j} className="flex items-center gap-2.5 text-xs sm:text-sm text-gray-300">
-                      <span className="text-yellow-500 font-bold">✓</span> {f}
+                      <span className="text-[#C9A84C] font-bold">✓</span> {f}
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div className="flex items-center justify-between pt-5 border-t border-zinc-800">
-                <span className="text-yellow-400 font-bold text-sm tracking-wide">{s.price}</span>
-                <a href="#contact" className="text-xs uppercase tracking-wider font-semibold text-gray-400 hover:text-yellow-400 transition-colors">
+                <span className="text-[#C9A84C] font-bold text-sm tracking-wide">{s.price}</span>
+                <a href="#contact" className="text-xs uppercase tracking-wider font-semibold text-gray-400 hover:text-[#C9A84C] transition-colors">
                   Inquire Now →
                 </a>
               </div>

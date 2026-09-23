@@ -3,6 +3,7 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Gallery from '@/components/Gallery'
 import Services from '@/components/Services'
+import YouTubeShowcase from '@/components/YouTubeShowcase'
 import LogoShowcase from '@/components/LogoShowcase'
 import VisitingCard from '@/components/VisitingCard'
 import SocialHub from '@/components/SocialHub'
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <Gallery />
       <Services />
+      <YouTubeShowcase />
       <LogoShowcase />
       <VisitingCard />
       <SocialHub />
