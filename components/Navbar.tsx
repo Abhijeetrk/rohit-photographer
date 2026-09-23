@@ -79,7 +79,7 @@ export default function Navbar() {
               <span className="font-medium">@ro.clickz</span>
             </a>
 
-            <a href="#contact" className="btn-primary text-xs py-2.5 px-6 tracking-wider uppercase">
+            <a href="#contact" className="btn-primary">
               Book a Session
             </a>
           </div>

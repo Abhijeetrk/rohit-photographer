@@ -26,9 +26,9 @@
     @apply block w-14 h-0.5 bg-[#C9A84C] mx-auto mb-6;
   }
   .btn-primary {
-    @apply inline-block px-7 py-3 bg-[#C9A84C] text-[#0A0A0A] font-semibold rounded-full hover:bg-[#DFC378] transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#C9A84C]/15;
+    @apply inline-flex items-center justify-center min-h-[44px] px-8 py-3.5 bg-[#C9A84C] text-[#0A0A0A] font-semibold rounded-full hover:bg-[#DFC378] transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#C9A84C]/15 text-xs uppercase tracking-widest;
   }
   .btn-outline {
-    @apply inline-block px-7 py-3 border border-[#C9A84C] text-[#C9A84C] font-semibold rounded-full hover:bg-[#C9A84C] hover:text-[#0A0A0A] transition-all duration-300;
+    @apply inline-flex items-center justify-center min-h-[44px] px-8 py-3.5 border border-[#C9A84C] text-[#C9A84C] font-semibold rounded-full hover:bg-[#C9A84C] hover:text-[#0A0A0A] transition-all duration-300 text-xs uppercase tracking-widest;
   }
 }

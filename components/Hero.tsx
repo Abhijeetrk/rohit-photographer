@@ -46,8 +46,8 @@ export default function Hero() {
           ROHIT NAGRE
         </h1>
 
-        {/* Subtitle: PHOTOGRAPHY (Montserrat Light) */}
-        <p className="text-gray-300 text-xs sm:text-sm tracking-[0.4em] uppercase font-light mb-4">
+        {/* Subtitle: PHOTOGRAPHY (Montserrat Medium) */}
+        <p className="text-[#C9A84C]/90 text-xs sm:text-sm tracking-[0.35em] uppercase font-medium mb-4">
           PHOTOGRAPHY
         </p>
 
